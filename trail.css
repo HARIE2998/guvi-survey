@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+*{
+    font-family: poppins,sans-serif;
+}
+
+body{
+    margin: 10px;
+}
+
+.container .input-label{
+    font-size: 15px;
+    font-weight: 700;
+   
+}
+
+.container .input-label::after{
+    content : "*";
+    color: red;
+}
+
+.container .label{
+  padding-bottom: 10px;
+}
+
+.container .star-rating{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    font-family: fontAwesome;
+}
+
+.table1, tr, th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+    border-style:hidden;  
+    padding: 20px;  
+    table-layout: auto;
+    width: 1400px;
+    }
+    
+    .dot{
+    text-align: center;
+    }
+    
+    .col-1{
+    padding-right: 200px;
+    }
+    
+    .row{
+    background-color:#d9d9d9;}
+
+
+    .container .input-label-1{
+        font-size: 15px;
+        font-weight: 700;
+       
+    }    
+
+
+
+.container .submit{
+    width:15px;
+    height:20px;
+    padding-top:10px;
+}    
+
+
+.star-rating  > input{
+    display:none;
+}
+
+   
+.star-rating > label:before{
+    content: "\f005";
+    font-family: FontAwesome;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block;
+
+}
+
+.star-rating >label{
+    color: #ddd;
+    float: left;
+    cursor: pointer;
+
+}
+
+.star-rating > input:checked ~ label,
+.star-rating:not(:checked) > label:hover,
+.star-rating:not(:checked) > label:hover ~ label{
+    color: gold;
+}
+
+
+
+
